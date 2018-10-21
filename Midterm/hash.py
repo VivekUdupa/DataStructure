@@ -1,3 +1,9 @@
+#---------------------------------------------------------#
+#---- MATH 8650 Advanced Data Structures Fall 2018--------#		
+#-----------Midterm Exam -- Oct 21 2018-------------------#
+#----Programming Part: Implementation of Hash Table-------#
+#-------------Author: Vivek Koodli Udupa------------------#
+
 class HashTable():
 	"""Hash table for storing phone numbers"""
 
@@ -31,9 +37,11 @@ class HashTable():
 		""" Remove an object with key k """
 		#Compute the hash key
 		index = self.hash(k)
-		
+
 		#extract key value pair 
 		key, value = self.items[index]
+		
+		print("Deleting entry: ", key, value, "\n");
 		
 		if( self.items[index] != None):
 			#Delete the element in the key index
@@ -59,6 +67,7 @@ class HashTable():
 		if(self.items[index] != None):
 			#Print the value in the current entry
 			key, value = self.items[index]
+			print("Found", key, value)
 		
 		else:
 			raise KeyError("No element found in given key")
@@ -74,23 +83,27 @@ class HashTable():
 		for i in range(len(self.array)):
 			num, name = self.array[i]
 			print(num, "\t \t", name)
+
+		print("\n")
 	
 
-	#	for item in self.items:
-	#		if item is not None:
-	#			print(str(item))
-	#	print()
-
-
+#Main 
 h = HashTable(10)
 
+#Inserting into the Hash Table
 h.insert( 8648439651, "vivek" )
 h.insert( 8646439972, "himanshu" )
 h.insert( 8646439863, "chakan" )
 h.insert( 1234567898, "sadhu" )
+
+#Printing the table
 h.list()
 
+#Finding an element using its key
 h.find(8646439651)
+
+#Deleting an entry
 h.delete(1234567898)
 
+#Printing after Deletion
 h.list()
