@@ -25,67 +25,67 @@ class Stack:
 #Functions
 def reverse(r):
 	"""Returns the reversed Stack"""
-	#Initialize a temporary stack for reversal
-	temp = Stack()
+	#Initialize a Temporary stack for reversal
+	T = Stack()
 	
-	#Get the size of the original stack
+	#Get the size of the Sinal stack
 	n = r.size()
 
 	#variable to store count
 	count = 0
 	while(count < n-1):
-		#switch contents of r and temp
-		r, temp, v = switch1(n, r, temp)
+		#switch contents of r and T
+		r, T, v = switch1(n, r, T)
 		"""	
 		print("after switch1, count is: ", count)
-		print("original is: ", end = " ")
+		print("Sinal is: ", end = " ")
 		r.show()
-		print("\n temporary is: ", end = " ")
-		temp.show()
+		print("\n Torary is: ", end = " ")
+		T.show()
 		print("\n v = ", v)
 		"""
-		#switch contents back to r from temp
-		r, temp = switch2(n, count, r , temp, v)
+		#switch contents back to r from T
+		r, T = switch2(n, count, r , T, v)
 		"""	
 		print("after switch2, count is: ", count)
-		print("original is: ", end = " ")
+		print("Sinal is: ", end = " ")
 		r.show()
-		print("\n temporary is: ", end = " ")
-		temp.show()
+		print("\n Torary is: ", end = " ")
+		T.show()
 		print("\n v = ", v)
 		"""
 		count = count + 1
 
 	return r
 
-def switch1(n, orig, temp):
+def switch1(n, S, T):
 	"""Switch 1 """
 	
 	for sc in range(n): 
 		
-		#Store first itemp in auxilary variable
+		#Store first iT in auxilary variable
 		if(sc == 0):
-			v = orig.pop()
+			v = S.pop()
 		
-		#store rest of the items in temporary stack
+		#store rest of the items in Torary stack
 		else:
-			temp.push(orig.pop())
+			T.push(S.pop())
 		
-	return orig, temp, v
+	return S, T, v
 
-def switch2(n, count, orig, temp, v):
+def switch2(n, count, S, T, v):
 	"""Switch 2 """
 	
 	for sc in range(n):
 		#Reordering using the auxilary variable 
 		if(sc == count):
-			orig.push(v)
+			S.push(v)
 
-		#Push normally into original from temp
+		#Push normally into Sinal from T
 		else:
-			orig.push( temp.pop() ) 
+			S.push( T.pop() ) 
 
-	return orig, temp
+	return S, T
 
 #Main
 s = Stack()
