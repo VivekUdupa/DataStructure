@@ -82,6 +82,14 @@ while i>=0:
 	lis.push(i)
 	i = i - 1
 
+lis.push(33)
+lis.push(43)
+lis.push(38)
+lis.push(30)
+lis.push(35)
+lis.push(300)
+lis.push(333)
+
 print("List is: ")
 lis.printLis();
 
