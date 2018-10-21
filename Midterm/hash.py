@@ -91,10 +91,10 @@ class HashTable():
 h = HashTable(10)
 
 #Inserting into the Hash Table
-h.insert( 8648439651, "vivek" )
-h.insert( 8646439972, "himanshu" )
-h.insert( 8646439863, "chakan" )
-h.insert( 1234567898, "sadhu" )
+h.insert( 8648439651, "Vivek" )
+h.insert( 8646439972, "Himanshu" )
+h.insert( 8646439863, "Sourabh" )
+h.insert( 8646439984, "Akshay" )
 
 #Printing the table
 h.list()
@@ -103,7 +103,13 @@ h.list()
 h.find(8646439651)
 
 #Deleting an entry
-h.delete(1234567898)
+h.delete(8646439651)
 
 #Printing after Deletion
+h.list()
+
+#Adding element with the same key
+h.insert(8646439972, "Shubham")
+
+#Printing after insertion
 h.list()
