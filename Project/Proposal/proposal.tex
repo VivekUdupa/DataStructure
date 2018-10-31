@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage[utf8]{inputenc} 
+\usepackage{mdframed} %For framing the title
+\usepackage{graphicx} % to include images
+\usepackage{amsmath} % For math mode
+\usepackage{caption} % For captions
+\usepackage{subcaption} % To use caption while using mini page
+\usepackage{amssymb} % To use math symbols
+\usepackage{multirow} %To combine multiple rows in a table
+\usepackage[table]{xcolor} %To color rows / columns in table
+\usepackage{titling} %To vertically center the title page
+\usepackage{hyperref} %for URL
+
+\title{MATH 8650 \\ Advanced Data Structures \\ Fall 2018\\ \quad \\
+	Term Project Proposal \\ Path Findings}
+\author{Submitted by: 
+\\ Vivek Koodli Udupa 
+\\ Sai Harsha Ngabothu}
+\date{November - 2, 2018 }
+
+%%To make the title page center vertically centered
+%\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+%\renewcommand\maketitlehookd{\vfill\null}
+
+\begin{document}
+\begin{mdframed}
+%Displaying Title
+%\begin{titlepage}
+\maketitle
+%\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+%\end{titlepage}
+\end{mdframed}
+\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
+
+\section{Introduction}
+Pathfinding is the plotting of a computer application of the shortest route between two points. It is an essential part of many applications such as video games, robot navigation, road maps etc. Dijkstra's algorithm and A* are two popularly used algorithms for finding the shortest path. Dijkstra's algorithm explores all possible paths to find the shortest path while A* looks for a better path using a heuristic function. \\
+In this project, we will do a comparison study between the two algorithms to find out which has better run time, complexity, efficiency and accuracy. 
+\section{Goals}
+\begin{enumerate}
+	\item Implement A* algorithm
+	\item Implement Dijkstra's algorithm
+	\item Design test cases to validate the implementation
+	\item Compare the two for performance, accuracy and efficiency
+\end{enumerate}
+
+\section{Deliverables}
+\begin{enumerate}
+	\item Python implementation source code ( Jupyter Notebook )
+	\item Report
+	\item Project Presentation
+\end{enumerate}
+
+\section{References}
+[1] \url{https://en.wikipedia.org/wiki/Pathfinding} \\
+\\ \noindent 
+[2] \url{https://en.wikipedia.org/wiki/A*_search_algorithm} \\
+\\ \noindent
+[3] \url{https://www.redblobgames.com/pathfinding/a-star/implementation.html} \\
+\\ \noindent
+[4] \url{https://stackoverflow.com/questions/13031462/difference-and-advantages-between-dijkstra-a-star}
+\end{document}
