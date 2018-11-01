@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.29)  1 NOV 2018 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.29)  1 NOV 2018 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1106,7 +1106,7 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 Here is how much of TeX's memory you used:
  17454 strings out of 492990
  308203 string characters out of 6135005
- 394124 words of memory out of 5000000
+ 394128 words of memory out of 5000000
  20834 multiletter control sequences out of 15000+600000
  538590 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
