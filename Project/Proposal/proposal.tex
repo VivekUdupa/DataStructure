@@ -13,11 +13,11 @@
 \usepackage{hyperref} %for URL
 
 \title{MATH 8650 \\ Advanced Data Structures \\ Fall 2018\\ \quad \\
-	Term Project Proposal \\ Comparison of Optimal Path Findings}
+	Term Project Proposal \\ Optimization of Bellman Ford Algorithm}
 \author{Submitted by: 
 \\ Vivek Koodli Udupa 
 \\ Sai Harsha Nagabothu}
-\date{November - 2, 2018 }
+\date{November - 10, 2018 }
 
 %%To make the title page center vertically centered
 %\renewcommand\maketitlehooka{\null\mbox{}\vfill}
@@ -34,12 +34,12 @@
 \pagenumbering{arabic}% Arabic page numbers (and reset to 1)
 
 \section{Introduction}
-Pathfinding is the plotting of a computer application of the shortest route between two points. It is an essential part of many applications such as video games, robot navigation, road maps etc. Dijkstra's algorithm and A* are two popularly used algorithms for finding the shortest path. Dijkstra's algorithm explores all possible paths to find the shortest path while A* looks for a better path using a heuristic function. \\
-In this project, we will do a comparison study between the two algorithms to find out which has better run time, complexity, efficiency and accuracy. 
+Pathfinding is the plotting of a computer application of the shortest route between two points. It is an essential part of many applications such as video games, robot navigation, road maps etc. Dijkstra's and Bellman Ford are two of many algorithms that are used to find the shortest path. Even though Dijkstra's is faster, Bellman Ford is considered when negative cycles are present in the graph.  
+Standard Bellman Ford has a complexity of O(VxE) where V is the vertices and E is the edges of the graph. In this project we will try to improve the runtime of Bellman Ford algorithm.  
 \section{Goals}
 \begin{enumerate}
-	\item Implement A* algorithm
-	\item Implement Dijkstra's algorithm
+	\item Implement Bellman Ford Algorithm
+	\item Implement optimized Bellman Ford Algorithm
 	\item Design test cases to validate the implementation
 	\item Compare the two for performance, accuracy and efficiency
 \end{enumerate}
@@ -53,10 +53,9 @@ In this project, we will do a comparison study between the two algorithms to fin
 
 \section{References}
 [1] \url{https://en.wikipedia.org/wiki/Pathfinding} \\
-\\ \noindent 
-[2] \url{https://en.wikipedia.org/wiki/A*_search_algorithm} \\
 \\ \noindent
-[3] \url{https://www.redblobgames.com/pathfinding/a-star/implementation.html} \\
+[2] \url{https://en.wikipedia.org/wiki/Bellman\%E2\%80\%93Ford_algorithm} \\
 \\ \noindent
-[4] \url{https://stackoverflow.com/questions/13031462/difference-and-advantages-between-dijkstra-a-star}
+[3] Wei Zhang , Hao Chen , Chong Jiang , Lin Zhu ,\lq\lq{}Improvement And Experimental Evaluation Bellman-Ford Algorithm\rq\rq{}, \textit{International Conference on Advanced Information and Communication Technology for Education (ICAICTE 2013)}
+
 \end{document}
