@@ -34,14 +34,14 @@
 \pagenumbering{arabic}% Arabic page numbers (and reset to 1)
 
 \section{Introduction}
-Pathfinding is the plotting of a computer application of the shortest route between two points. It is an essential part of many applications such as video games, robot navigation, road maps etc. Dijkstra's and Bellman Ford are two of many algorithms that are used to find the shortest path. Even though Dijkstra's is faster, Bellman Ford is considered when negative cycles are present in the graph.  
-Standard Bellman Ford has a complexity of O(VxE) where V is the vertices and E is the edges of the graph. In this project we will try to improve the runtime of Bellman Ford algorithm.  
+Is it possible to find the shortest path in a negative weighed graph faster than the Bellman Ford Algorithm? Path-finding is the plotting of a computer application of the shortest route between two points. It is an essential part of many applications such as video games, robot navigation, road maps etc. Dijkstra's and Bellman Ford are two of many algorithms that are used to find the shortest path. Even though Dijkstra's is faster, Bellman Ford is considered when negative cycles are present in the graph. \\
+Standard Bellman Ford Algorithm has a complexity of O(VxE) where V is the vertices and E is the edges of the graph. In this project we will try to implement an algorithm$^{[3]}$ that finds the shortest path for graphs that include negative weights and compare it with Bellman Ford Algorithm to see which one performs better.   
 \section{Goals}
 \begin{enumerate}
 	\item Implement Bellman Ford Algorithm
-	\item Implement optimized Bellman Ford Algorithm
+	\item Implement the proposed Algorithm$^{[3]}$
 	\item Design test cases to validate the implementation
-	\item Compare the two for performance, accuracy and efficiency
+	\item Compare the two for performance and efficiency
 \end{enumerate}
 
 \section{Deliverables}
