@@ -1,0 +1,56 @@
+Sl.No	FILE 		DESCRIPTION
+-------------------------------------------------
+1		HW01		Norm, printing a list, shuffle, try and except
+2		HW02		iterative and recursive algorithms(fibonacci) and binary search
+3		HW03		matplotlib, stack, queue, deque, deque using doubly-linked list.
+4		HW04		Trees using dict, breadth-first traversal, depth-first traversal, n-queens, shallow and deep copy.
+5		HW05		Priority Queues.
+6		HW06		Selection and Merge Sort.
+
+---------------------------------------------------------------------------------------------------------------------
+COMMENTS
+HW01	17/20
+----
+1. You could initialize mySum and count only when needed. You should compute the norm for any (nonnegative integer) p. 1-norm and 2-norm don't have to be special. You need to take the absolute value of each entry; otherwise odd powers don't work. In the max norm, it's important to take the absolute value before comparing to the largest entry so far. It would be better for the function not to print the result, but to let the calling program do that.
+2. Don't need to initialize i. 
+3. You only need one random index at each step. Swap a random element from 1 to i - 1 with element i for each i. You can use multiple assingment to avoid the temp variable in your swap. 
+
+HW02	50/55
+----
+Q2.  The sequence is known as Leonardo numbers (-1).
+Q4. While the number of costs is linear, there is a slight bug in the code. It returns (number of additions) 1 when n = 1. I think it should be technically 0. This will slightly offset the pattern. (-1)
+Q5. Recurrence is not the exact as discussed in the slides and could have been a lot simpler. (-1)
+Q6. Refer Q4 feedback. Points not deducted this time.
+Q8. The cost pattern is off slightly. For n = 0 and 1 there should be no additions. For n = 4, there should be only 2. (-2) 
+
+HW03	28/30
+----
+Q1. (-1)
+- removing the last element takes O(1).
+Q3. (-1)
+- The second part of the question regarding time complexity was to consider each operation alone. So it would be O(1)
+
+HW04	39/45
+----
+Q1.  (-1)
+While the solution is correct, you can prevent using additional data structures (in this case an extra deque) by adding the child along with the generation to the original queue.
+Q2. (-3)
+Code fails for the following test case :
+G4 = [("A","B"), ("B","C"), ("B","D"),("C","E"), ("E","F"), ("F","C")]
+print (all_connected_to(G4, "A"))
+After constructing the data structures, we can visit the nodes in the graph exactly once to check if they are visited. This would be linear.
+Q3. (-2)
+There seems to something wrong in the placement of children for Bob. That sort of changes the ordering of the tree a little bit.
+
+HW05	40/40
+----
+Q3. 
+While heapify works correctly and the approach to the solution is good, you could have also used the sift_down procedure to heapify starting from the nodes at the second last level (No points deducted)
+Q4.
+While decrease_priority works perfectly, replacing the priority and sifting up the heap from that node to root would have eliminated the need for an extra loop through the nodes to check for heap property(No points deducted)
+
+Kudos for the visual tree printing.
+
+HW06	20/20
+----
+-No Comments-
