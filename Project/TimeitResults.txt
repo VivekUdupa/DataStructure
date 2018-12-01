@@ -1,0 +1,55 @@
+NON-Negative Edges
+order:
+Dijkstra's
+BellmanFord
+SPFA_FIFO
+SPFA_LIFO
+SPFA_PAPE
+------------------
+10 vertices 45 edges
+------------------
+51.6 µs ± 278 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+428 µs ± 8.28 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+15.1 µs ± 212 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+19.3 µs ± 160 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+16.5 µs ± 391 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+
+-------------------------
+50 vertices 1225 edges
+-------------------------
+832 µs ± 29.7 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+57.4 ms ± 625 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+393 µs ± 8.99 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+472 µs ± 4.54 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+366 µs ± 2.16 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+-------------------------
+100 vertices 4950 edges
+-------------------------
+2.35 ms ± 126 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+477 ms ± 17.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+1.49 ms ± 12.4 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+1.7 ms ± 76.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+1.56 ms ± 44.8 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+-------------------------
+250 vertices 31125 edges
+-------------------------
+10.4 ms ± 312 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+8.43 s ± 528 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+11 ms ± 479 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+9.62 ms ± 402 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+12.3 ms ± 143 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+
+---------------------------
+500 vertices 124750  edges
+---------------------------
+38.2 ms ± 2.35 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+1min 20s ± 2.82 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
+43.9 ms ± 3.42 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+60.9 ms ± 5.46 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+50.9 ms ± 4.58 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+
+---------------------------
+1000 vertices 499500  edges
+---------------------------
