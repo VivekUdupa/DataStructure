@@ -75,7 +75,7 @@ The following steps are considered while implementing the Bellman Ford Algorithm
 
 \subsection{Negative Cycle Check}
 For a given source node, Bellman Ford algorithm first calculates the shortest distance which has at-most one edge in the path. Then, it calculates shortest path with at-most two edges, and so on. After V - 1 iterations, shortest distance to all the vertices in the graph will be calculated. \\ 
-Another shorter distance is after the $V - 1^{th}$ iteration indicates the presence of a Negative Cycle. The algorithm can be stopped here otherwise it will fall into an infinite loop. \\
+Another shorter distance found after the $V - 1^{th}$ iteration indicates the presence of a Negative Cycle. The algorithm can be stopped here otherwise it will fall into an infinite loop. \\
 
 \subsection{Node Relaxation}
 Relaxation is the most important step in Bellman-Ford. It is what increases the accuracy of the distance to any given vertex. Relaxation works by continuously shortening the calculated distance between vertices comparing that distance with other known distances. \\
@@ -213,12 +213,26 @@ For non-negative weight graphs, Dijkstra runs 80 times faster than Bellman Ford 
 
 For combination of negative and non-weight graphs, SPFA-FIFO performs better than other SPFA variations.\\  
 
-\newpage
+
 \section*{References}
 [1] \url{https://cs.stackexchange.com/questions/14248/what-is-the-significance-of-negative-weight-edges-in-a-graph} \\
 \\ \noindent
-[2] \url{https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/}
+[2] \url{https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/} \\
 \\ \noindent
+[3] \url{https://doi.org/10.1016/0893-9659(93)90022-F} \\
+\\ \noindent
+[4] \url{http://forskning.diku.dk/PATH05/GoldbergSlides.pdf} \\
+\\ \noindent
+[5] \url{https://en.wikipedia.org/wiki/Bellman–Ford_algorithm} \\
+\\ \noindent
+[6] \url{https://stackoverflow.com/questions/19548354/yens-improvement-to-bellman-ford} \\
+\\ \noindent
+[7] \url{https://en.wikipedia.org/wiki/Shortest_Path_Faster_Algorithm} \\
+\\ \noindent
+[8] \url{https://networkx.github.io/documentation/networkx-1.10/tutorial/tutorial.html}
+
+
+
 
 
 \end{document}
